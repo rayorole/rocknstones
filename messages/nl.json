@@ -1,0 +1,102 @@
+{
+  "Nav": {
+    "home": "Home",
+    "collection": "Collectie",
+    "aboutUs": "Over ons",
+    "contact": "Contact"
+  },
+  "LocaleSwitcher": {
+    "label": "Taal",
+    "en": "Engels",
+    "nl": "Nederlands"
+  },
+  "Common": {
+    "brandName": "Rock'n Stones"
+  },
+  "Hero": {
+    "fallbackHeading": "ONVERBETERLIJK DONKER.",
+    "fallbackSubheading": "De exclusieve collectie zeldzame zwarte diamanten. Strak, briljant en prachtig mysterieus.",
+    "viewCollection": "Bekijk collectie",
+    "dark": "DONKER."
+  },
+  "Footer": {
+    "tagline": "Zeldzame zwarte diamanten en fijn juweel. Strak, briljant en voor de onverbeterlijken.",
+    "links": "Links",
+    "contactUs": "Contact",
+    "allRightsReserved": "© {year} Rock'n Stones. Alle rechten voorbehouden."
+  },
+  "About": {
+    "title": "Ons verhaal",
+    "subtitle": "Van een kleine werkplaats tot bestemming voor zeldzame zwarte diamanten en strakke sieraden.",
+    "howItStarted": "Hoe het begon",
+    "howItStartedBody": "Rock'n Stones begon in 2012 toen onze oprichter, edelsteenkundige en ontwerper, geobsedeerd raakte door zwarte diamanten—hun diepte, zeldzaamheid en de manier waarop ze de gebruikelijke schittering trotseren. Wat begon als een nevenproject in een Brooklyn-studio groeide uit tot een volwaardige collectie rond één idee: sieraden moeten onverbeterlijk strak zijn.",
+    "craftAndCuration": "Vakmanschap en selectie",
+    "craftBody": "We werken met een klein netwerk van slijpers en zetters die onze normen delen. Elk stuk wordt met de hand afgewerkt en geïnspecteerd voordat het bij u komt. We doen geen massaproductie: elk ontwerp wordt in beperkte series gemaakt, zodat u iets draagt dat opvalt—niet iets dat u overal ziet.",
+    "whyBlackDiamonds": "Waarom zwarte diamanten",
+    "whyBody": "Zwarte diamanten zijn natuurlijk, ondoorzichtig en vol karakter. Ze vertrouwen niet op dezelfde \"vuur\" als witte diamanten—ze hebben hun eigen aanwezigheid. Onze collectie combineert deze stenen met witgoud, platina en zwart rodium, zodat het metaal en de steen bewust aanvoelen, niet opzichtig. Voor ons is dat het punt: zelfverzekerd, duurzaam, een beetje mysterieus.",
+    "ctaText": "Heeft u een vraag of wilt u ons persoonlijk bezoeken? We horen graag van u.",
+    "contactUs": "Contact opnemen"
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Stuur een bericht en we nemen zo snel mogelijk contact met u op.",
+    "formName": "Naam",
+    "formEmail": "E-mail",
+    "formMessage": "Bericht",
+    "placeholderName": "Uw naam",
+    "placeholderEmail": "u@voorbeeld.nl",
+    "placeholderMessage": "Hoe kunnen we helpen?",
+    "send": "Verstuur bericht",
+    "thanks": "Bedankt voor uw bericht.",
+    "thanksSub": "We nemen binnenkort contact met u op."
+  },
+  "Collection": {
+    "title": "De zwarte diamant collectie",
+    "subtitle": "Bekijk ons aanbod zeldzame zwarte diamanten en fijn juweel. Ervaar de tijdloze elegantie van zwarte diamanten in elk stuk.",
+    "productCount": "{count} product",
+    "productCount_other": "{count} producten",
+    "noProducts": "Geen producten voldoen aan dit filter. Probeer een ander prijsbereik.",
+    "price": "Prijs",
+    "orderBy": "Sorteren op",
+    "noImage": "Geen afbeelding",
+    "viewProduct": "Bekijk product"
+  },
+  "CollectionFilters": {
+    "anyPrice": "Elke prijs",
+    "under500": "Onder €500",
+    "500to1000": "€500 – €1.000",
+    "1000to2000": "€1.000 – €2.000",
+    "2000plus": "€2.000+",
+    "newest": "Nieuwste",
+    "priceLowHigh": "Prijs: laag naar hoog",
+    "priceHighLow": "Prijs: hoog naar laag",
+    "nameAZ": "Naam A–Z"
+  },
+  "Product": {
+    "noImage": "Geen afbeelding",
+    "backToCollection": "Terug naar collectie",
+    "youMightAlsoLike": "Misschien vindt u dit ook leuk",
+    "shippingReturns": "Verzending & retours",
+    "shippingBody": "We bieden alleen afhalen in de winkel. Geen verzending. Na uw aankoop bevestigen we de beschikbaarheid en kunt u uw bestelling ophalen op een moment dat u schikt.",
+    "returnsBody": "Retourneren is mogelijk binnen 14 dagen na afhalen voor ongebruikte artikelen in originele staat. Neem contact met ons op met uw bestelgegevens om een retour te starten. Terugbetalingen worden verwerkt naar de oorspronkelijke betaalmethode zodra we het artikel hebben ontvangen en geïnspecteerd.",
+    "pickupInStore": "Afhalen in winkel"
+  },
+  "PickupModal": {
+    "title": "Bestelling afhalen",
+    "description": "Bezoek ons op onderstaand adres of bel om de beschikbaarheid te bevestigen.",
+    "phone": "Telefoon",
+    "address": "Adres"
+  },
+  "Search": {
+    "search": "Zoeken",
+    "placeholder": "Zoek producten...",
+    "searching": "Zoeken…",
+    "noResults": "Geen producten gevonden.",
+    "typeMore": "Typ minstens 2 tekens.",
+    "ariaLabel": "Zoek producten"
+  },
+  "Featured": {
+    "latestProducts": "Nieuwste producten",
+    "viewAll": "Alles bekijken"
+  }
+}

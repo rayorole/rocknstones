@@ -1,0 +1,102 @@
+{
+  "Nav": {
+    "home": "Home",
+    "collection": "Collection",
+    "aboutUs": "About us",
+    "contact": "Contact"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "nl": "Dutch"
+  },
+  "Common": {
+    "brandName": "Rock'n Stones"
+  },
+  "Hero": {
+    "fallbackHeading": "UNAPOLOGETICALLY DARK.",
+    "fallbackSubheading": "The exclusive collection of rare black diamonds. Bold, brilliant, and beautifully mysterious.",
+    "viewCollection": "View Collection",
+    "dark": "DARK."
+  },
+  "Footer": {
+    "tagline": "Rare black diamonds and fine jewelry. Bold, brilliant, and made for the unapologetic.",
+    "links": "Links",
+    "contactUs": "Contact us",
+    "allRightsReserved": "© {year} Rock'n Stones. All rights reserved."
+  },
+  "About": {
+    "title": "Our story",
+    "subtitle": "From a small workshop to a destination for rare black diamonds and bold jewelry.",
+    "howItStarted": "How it started",
+    "howItStartedBody": "Rock'n Stones began in 2012 when our founder, a gemologist and designer, became obsessed with black diamonds—their depth, rarity, and the way they defy the usual sparkle. What started as a side project in a Brooklyn studio grew into a full collection built around one idea: jewelry should be unapologetically bold.",
+    "craftAndCuration": "Craft and curation",
+    "craftBody": "We work with a small network of cutters and setters who share our standards. Every piece is hand-finished and inspected before it reaches you. We don't do mass production: each design is made in limited runs so you're wearing something that stands out, not something you'll see on everyone else.",
+    "whyBlackDiamonds": "Why black diamonds",
+    "whyBody": "Black diamonds are natural, opaque, and full of character. They don't rely on the same \"fire\" as white diamonds—they have their own presence. Our collection mixes these stones with white gold, platinum, and black rhodium so the metal and the gem feel intentional, not flashy. For us, that's the point: confident, lasting, a little mysterious.",
+    "ctaText": "Have a question, or want to visit us in person? We'd love to hear from you.",
+    "contactUs": "Contact us"
+  },
+  "Contact": {
+    "title": "Contact us",
+    "subtitle": "Send us a message and we'll get back to you as soon as we can.",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formMessage": "Message",
+    "placeholderName": "Your name",
+    "placeholderEmail": "you@example.com",
+    "placeholderMessage": "How can we help?",
+    "send": "Send message",
+    "thanks": "Thanks for your message.",
+    "thanksSub": "We'll get back to you soon."
+  },
+  "Collection": {
+    "title": "The Black Diamond Collection",
+    "subtitle": "Browse our selection of rare black diamonds and fine jewelry. Experience the timeless elegance of black diamonds in every piece.",
+    "productCount": "{count} product",
+    "productCount_other": "{count} products",
+    "noProducts": "No products match this filter. Try a different price range.",
+    "price": "Price",
+    "orderBy": "Order by",
+    "noImage": "No image",
+    "viewProduct": "View Product"
+  },
+  "CollectionFilters": {
+    "anyPrice": "Any price",
+    "under500": "Under $500",
+    "500to1000": "$500 – $1,000",
+    "1000to2000": "$1,000 – $2,000",
+    "2000plus": "$2,000+",
+    "newest": "Newest",
+    "priceLowHigh": "Price: low to high",
+    "priceHighLow": "Price: high to low",
+    "nameAZ": "Name A–Z"
+  },
+  "Product": {
+    "noImage": "No image",
+    "backToCollection": "Back to collection",
+    "youMightAlsoLike": "You might also like",
+    "shippingReturns": "Shipping & returns",
+    "shippingBody": "We offer pickup in store only. No shipping. After you purchase, we'll confirm availability and you can collect your order at our location at your convenience.",
+    "returnsBody": "Refunds are possible within 14 days of pickup for unused items in original condition. Please contact us with your order details to start a return. Refunds will be processed to the original payment method once we receive and inspect the item.",
+    "pickupInStore": "Pick up in store"
+  },
+  "PickupModal": {
+    "title": "Pick up your order",
+    "description": "Visit us at the address below or call to confirm availability.",
+    "phone": "Phone",
+    "address": "Address"
+  },
+  "Search": {
+    "search": "Search",
+    "placeholder": "Search products...",
+    "searching": "Searching…",
+    "noResults": "No products found.",
+    "typeMore": "Type at least 2 characters.",
+    "ariaLabel": "Search products"
+  },
+  "Featured": {
+    "latestProducts": "Latest Products",
+    "viewAll": "View all"
+  }
+}

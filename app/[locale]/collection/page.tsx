@@ -108,7 +108,7 @@ export default async function CollectionPage({ params, searchParams }: Props) {
 
   return (
     <main className="min-h-screen bg-background">
-      <div className="container mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8">
+      <div className="container mx-auto max-w-6xl px-5 py-6 sm:px-6 sm:py-8">
         <div className="flex flex-col items-center justify-center space-y-3 sm:space-y-4 py-10 sm:py-16 px-4 bg-muted/50 rounded-lg">
           <h1 className="text-2xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center">
             {t("title")}
@@ -133,7 +133,7 @@ export default async function CollectionPage({ params, searchParams }: Props) {
             {t("noProducts")}
           </p>
         ) : (
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 py-6 sm:py-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 py-6 sm:py-8 sm:grid-cols-2 lg:grid-cols-4 px-2 sm:px-0">
             {sorted.map((product) => {
               const mainImage = product.image?.[0];
               const slug = product.slug?.current ?? product._id;
@@ -159,14 +159,14 @@ export default async function CollectionPage({ params, searchParams }: Props) {
                       </div>
                     )}
                   </div>
-                  <div className="mt-3 flex items-baseline justify-between gap-2 min-w-0">
+                  <div className="mt-3 flex items-baseline justify-between gap-2 min-w-0 px-2 sm:px-0">
                     <span className="font-medium truncate min-w-0">{product.name}</span>
                     <span className="shrink-0 font-semibold">
                       {formatPrice(product.price, locale)}
                     </span>
                   </div>
                   {product.description ? (
-                    <p className="mt-1 text-sm text-muted-foreground line-clamp-2">
+                    <p className="mt-1 text-sm text-muted-foreground line-clamp-2 px-2 sm:px-0">
                       {product.description}
                     </p>
                   ) : null}

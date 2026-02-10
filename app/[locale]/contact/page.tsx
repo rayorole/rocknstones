@@ -10,7 +10,7 @@ export default async function ContactPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-background">
-      <div className="container mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12">
+      <div className="container mx-auto max-w-6xl px-5 py-8 sm:px-6 sm:py-12">
         <div className="max-w-xl mx-auto min-w-0">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             {t("title")}

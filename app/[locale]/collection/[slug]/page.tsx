@@ -80,7 +80,7 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-background">
-      <div className="container mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8">
+      <div className="container mx-auto max-w-6xl px-5 py-6 sm:px-6 sm:py-8">
         <Link
           href="/collection"
           className="mb-6 sm:mb-8 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground"
@@ -116,7 +116,7 @@ export default async function ProductPage({ params }: Props) {
             <h2 className="text-xl font-semibold tracking-tight sm:text-2xl md:text-3xl">
               {t("youMightAlsoLike")}
             </h2>
-            <div className="mt-6 sm:mt-8 grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3">
+            <div className="mt-6 sm:mt-8 grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3 px-2 sm:px-0">
               {otherProducts.map((p) => {
                 const productSlug = p.slug?.current ?? p._id;
                 const mainImage = p.image?.[0];
@@ -141,14 +141,14 @@ export default async function ProductPage({ params }: Props) {
                         </div>
                       )}
                     </div>
-                    <div className="mt-3 flex items-baseline justify-between gap-2">
-                      <span className="font-medium">{p.name}</span>
+                    <div className="mt-3 flex items-baseline justify-between gap-2 px-2 sm:px-0">
+                      <span className="font-medium truncate min-w-0">{p.name}</span>
                       <span className="shrink-0 font-semibold">
                         {formatPrice(p.price, locale)}
                       </span>
                     </div>
                     {p.description ? (
-                      <p className="mt-1 text-sm text-muted-foreground line-clamp-2">
+                      <p className="mt-1 text-sm text-muted-foreground line-clamp-2 px-2 sm:px-0">
                         {p.description}
                       </p>
                     ) : null}

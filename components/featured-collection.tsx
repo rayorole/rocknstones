@@ -47,7 +47,7 @@ export default async function FeaturedCollection() {
   }
 
   return (
-    <section className="w-full py-10 sm:py-16 px-4 sm:px-6">
+    <section className="w-full py-10 sm:py-16 px-5 sm:px-6">
       {/* Section header */}
       <div className="mb-8 sm:mb-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <h2 className="text-xl font-medium tracking-tight sm:text-3xl">
@@ -62,7 +62,7 @@ export default async function FeaturedCollection() {
       </div>
 
       {/* Product grid */}
-      <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4 px-2 sm:px-0">
         {products.map((product) => {
           const mainImage = product.image?.[0];
           const slug = product.slug?.current ?? product._id;
@@ -88,19 +88,19 @@ export default async function FeaturedCollection() {
                   </div>
                 )}
               </div>
-              <div className="flex flex-row items-start justify-between gap-2 px-2 sm:px-4 pt-3 sm:pt-4 pb-1">
+              <div className="flex flex-row items-start justify-between gap-2 px-3 sm:px-4 pt-3 sm:pt-4 pb-1">
                 <span className="text-base sm:text-lg font-medium truncate min-w-0">{product.name}</span>
                 <span className="shrink-0 text-base sm:text-lg font-bold">
                   {formatPrice(product.price, locale)}
                 </span>
               </div>
               {product.description ? (
-                <p className="px-2 sm:px-4 text-sm text-muted-foreground line-clamp-2">
+                <p className="px-3 sm:px-4 text-sm text-muted-foreground line-clamp-2">
                   {product.description}
                 </p>
               ) : null}
               <div className="flex-1 px-4 pb-0" />
-              <div className="px-2 sm:px-4 pb-4 pt-2">
+              <div className="px-3 sm:px-4 pb-4 pt-2">
                 <Button variant="default" className="w-full">
                   {tCollection("viewProduct")}
                 </Button>

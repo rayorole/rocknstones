@@ -9,7 +9,7 @@ export default async function Page({ params }: Props) {
   setRequestLocale(locale);
 
   return (
-    <main className="space-y-8 sm:space-y-10 p-4 sm:p-6 min-w-0">
+    <main className="space-y-8 sm:space-y-10 p-5 sm:p-6 min-w-0">
       <Hero />
       <FeaturedCollection />
     </main>

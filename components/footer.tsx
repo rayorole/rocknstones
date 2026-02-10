@@ -13,8 +13,8 @@ const siteLinks = [
 ];
 
 const contact = {
-  phone: "+1 (555) 123-4567",
-  address: "123 Gem Street, Suite 100\nNew York, NY 10001",
+  phone: "+32475430399",
+  address: "Hoveniersstraat 2, 6e verdieping bureau 630",
 };
 
 export default function Footer() {

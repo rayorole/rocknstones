@@ -37,15 +37,24 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-2 sm:py-2">
         <div className="flex items-center justify-between gap-2">
           {/* Logo - always visible */}
-          <Link href="/" className="flex items-center gap-2 w-fit shrink-0 min-w-0">
-            <Image src="/logo.png" alt="" width={32} height={32} className="shrink-0" />
+          <Link
+            href="/"
+            className="flex items-center gap-2 w-fit shrink-0 min-w-0"
+          >
+            <Image
+              src="/logo.png"
+              alt=""
+              width={32}
+              height={32}
+              className="shrink-0"
+            />
             <span className="text-lg font-bold truncate sm:text-2xl">
               {tCommon("brandName")}
             </span>
           </Link>
 
           {/* Center nav - hidden on mobile */}
-          <div className="hidden md:flex flex-1 items-center justify-center gap-2">
+          <div className="hidden md:flex flex-1 items-center justify-center gap-2 space-x-4">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className={navLinkClass}>
                 {t(item.key)}
@@ -62,11 +71,19 @@ export default function Navbar() {
             </div>
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
               <SheetTrigger asChild className="md:hidden">
-                <Button variant="outline" size="icon" className="h-9 w-9" aria-label="Open menu">
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="h-9 w-9"
+                  aria-label="Open menu"
+                >
                   <MenuIcon className="size-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[min(320px,100vw-2rem)] flex flex-col p-0">
+              <SheetContent
+                side="right"
+                className="w-[min(320px,100vw-2rem)] flex flex-col p-0"
+              >
                 <SheetHeader className="sr-only">
                   <SheetTitle>Menu</SheetTitle>
                 </SheetHeader>
@@ -85,11 +102,15 @@ export default function Navbar() {
                   </nav>
                   <div className="mt-8 pt-6 border-t border-border flex flex-col gap-4">
                     <div className="flex items-center justify-between gap-3">
-                      <span className="text-sm text-muted-foreground">Language</span>
+                      <span className="text-sm text-muted-foreground">
+                        Language
+                      </span>
                       <LocaleSwitcher />
                     </div>
                     <div className="flex items-center justify-between gap-3">
-                      <span className="text-sm text-muted-foreground">Theme</span>
+                      <span className="text-sm text-muted-foreground">
+                        Theme
+                      </span>
                       <ThemeToggle />
                     </div>
                   </div>

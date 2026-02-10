@@ -86,7 +86,7 @@ export function NavSearch() {
           <span className="text-sm">{t("search")}</span>
         </Button>
       </PopoverTrigger>
-      <PopoverContent align="end" className="w-80 p-0" sideOffset={8}>
+      <PopoverContent align="end" className="w-[min(20rem,calc(100vw-2rem))] p-0" sideOffset={8}>
         <div className="p-2 border-b">
           <Input
             ref={inputRef}

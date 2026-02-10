@@ -24,8 +24,8 @@ export default function Footer() {
 
   return (
     <footer className="border-t bg-muted/30">
-      <div className="container mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="container mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
+        <div className="grid gap-8 sm:gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-flex items-center gap-2">
               <Image src="/logo.png" alt="" width={36} height={36} />
@@ -75,7 +75,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="mt-10 pt-6 text-center text-xs text-muted-foreground border-t">
+        <p className="mt-8 sm:mt-10 pt-6 text-center text-xs text-muted-foreground border-t px-2">
           {tFooter("allRightsReserved", {
             year: new Date().getFullYear(),
           })}

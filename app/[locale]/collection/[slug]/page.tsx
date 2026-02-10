@@ -80,23 +80,23 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-background">
-      <div className="container mx-auto max-w-6xl px-4 py-8 sm:px-6">
+      <div className="container mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8">
         <Link
           href="/collection"
-          className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground"
+          className="mb-6 sm:mb-8 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground"
         >
-          <ArrowLeftIcon className="h-4 w-4" />
+          <ArrowLeftIcon className="h-4 w-4 shrink-0" />
           {t("backToCollection")}
         </Link>
 
-        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-12">
           <ProductImageGallery images={imageUrls} alt={product.name} />
 
-          <div className="flex flex-col">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <div className="flex flex-col min-w-0">
+            <h1 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl">
               {product.name}
             </h1>
-            <p className="mt-2 text-2xl font-semibold">
+            <p className="mt-2 text-xl sm:text-2xl font-semibold">
               {formatPrice(product.price, locale)}
             </p>
             {product.description ? (
@@ -105,18 +105,18 @@ export default async function ProductPage({ params }: Props) {
               </p>
             ) : null}
 
-            <div className="pt-8">
+            <div className="pt-6 sm:pt-8">
               <PickupModal />
             </div>
           </div>
         </div>
 
         {otherProducts.length > 0 && (
-          <section className="mt-16 border-t pt-16">
-            <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+          <section className="mt-12 sm:mt-16 border-t pt-12 sm:pt-16">
+            <h2 className="text-xl font-semibold tracking-tight sm:text-2xl md:text-3xl">
               {t("youMightAlsoLike")}
             </h2>
-            <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div className="mt-6 sm:mt-8 grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3">
               {otherProducts.map((p) => {
                 const productSlug = p.slug?.current ?? p._id;
                 const mainImage = p.image?.[0];
@@ -159,11 +159,11 @@ export default async function ProductPage({ params }: Props) {
           </section>
         )}
 
-        <section className="mt-16 border-t py-16">
-          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+        <section className="mt-12 sm:mt-16 border-t py-10 sm:py-16">
+          <h2 className="text-xl font-semibold tracking-tight sm:text-2xl md:text-3xl">
             {t("shippingReturns")}
           </h2>
-          <div className="mt-6 space-y-4 text-muted-foreground">
+          <div className="mt-4 sm:mt-6 space-y-4 text-sm sm:text-base text-muted-foreground">
             <p>{t("shippingBody")}</p>
             <p>{t("returnsBody")}</p>
           </div>

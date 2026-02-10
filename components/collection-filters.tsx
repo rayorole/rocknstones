@@ -41,11 +41,11 @@ export function CollectionFilters({ priceRange, sort }: CollectionFiltersProps) 
   );
 
   return (
-    <div className="flex flex-wrap items-center gap-4">
-      <div className="flex items-center gap-2">
+    <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 w-full sm:w-auto">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2 min-w-0">
         <label
           htmlFor="price-filter"
-          className="text-sm font-medium text-muted-foreground"
+          className="text-sm font-medium text-muted-foreground shrink-0"
         >
           {t("price")}
         </label>
@@ -53,7 +53,7 @@ export function CollectionFilters({ priceRange, sort }: CollectionFiltersProps) 
           id="price-filter"
           value={priceRange}
           onChange={(e) => updateParams({ priceRange: e.target.value })}
-          className="min-w-[180px]"
+          className="w-full min-w-0 sm:min-w-[180px]"
         >
           {PRICE_RANGES.map((r) => (
             <NativeSelectOption key={r.value} value={r.value}>
@@ -62,10 +62,10 @@ export function CollectionFilters({ priceRange, sort }: CollectionFiltersProps) 
           ))}
         </NativeSelect>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-2 min-w-0">
         <label
           htmlFor="sort"
-          className="text-sm font-medium text-muted-foreground"
+          className="text-sm font-medium text-muted-foreground shrink-0"
         >
           {t("orderBy")}
         </label>
@@ -73,7 +73,7 @@ export function CollectionFilters({ priceRange, sort }: CollectionFiltersProps) 
           id="sort"
           value={sort}
           onChange={(e) => updateParams({ sort: e.target.value })}
-          className="min-w-[180px]"
+          className="w-full min-w-0 sm:min-w-[180px]"
         >
           {SORT_OPTIONS.map((o) => (
             <NativeSelectOption key={o.value} value={o.value}>

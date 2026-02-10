@@ -40,7 +40,7 @@ export default async function Hero() {
   const backgroundImage = hero?.backgroundImage;
 
   return (
-    <section className="relative h-[700px] w-full flex items-center justify-center overflow-hidden rounded-xl">
+    <section className="relative min-h-[50vh] sm:min-h-[60vh] md:h-[600px] lg:h-[700px] w-full flex items-center justify-center overflow-hidden rounded-none sm:rounded-xl">
       {/* Background image */}
       <div className="absolute inset-0 bg-neutral-950">
         {backgroundImage ? (
@@ -72,8 +72,8 @@ export default async function Hero() {
       </div>
 
       {/* Centered content */}
-      <div className="relative z-10 px-4 text-center max-w-3xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight uppercase">
+      <div className="relative z-10 px-4 sm:px-6 text-center max-w-3xl mx-auto">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight uppercase">
           {(() => {
             const parts = heading.trim().split(/\s+/);
             const first = parts[0] ?? "";
@@ -87,10 +87,10 @@ export default async function Hero() {
             );
           })()}
         </h1>
-        <p className="mt-6 text-lg sm:text-xl text-white/90 font-light max-w-xl mx-auto">
+        <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-white/90 font-light max-w-xl mx-auto px-0">
           {subheading}
         </p>
-        <div className="mt-10">
+        <div className="mt-6 sm:mt-10">
           <Button asChild size="lg" variant="secondary">
             <Link href={ctaLink}>{ctaText}</Link>
           </Button>

@@ -108,22 +108,24 @@ export default async function CollectionPage({ params, searchParams }: Props) {
 
   return (
     <main className="min-h-screen bg-background">
-      <div className="container mx-auto max-w-6xl px-4 py-8 sm:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 py-16 bg-muted/50 rounded-lg">
-          <h1 className="text-3xl font-bold tracking-tight sm:text-5xl text-center">
+      <div className="container mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8">
+        <div className="flex flex-col items-center justify-center space-y-3 sm:space-y-4 py-10 sm:py-16 px-4 bg-muted/50 rounded-lg">
+          <h1 className="text-2xl font-bold tracking-tight sm:text-4xl md:text-5xl text-center">
             {t("title")}
           </h1>
-          <p className="mt-2 text-muted-foreground text-center max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground text-center max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
         </div>
-        <div className="mt-8 flex flex-wrap items-center justify-between gap-4 border-b pb-6">
-          <p className="text-sm text-muted-foreground">
+        <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-between gap-4 border-b pb-6">
+          <p className="text-sm text-muted-foreground order-2 sm:order-1">
             {t("productCount", { count: sorted.length })}
           </p>
-          <Suspense fallback={<div className="h-9 w-[180px]" />}>
-            <CollectionFilters priceRange={priceRange} sort={sort} />
-          </Suspense>
+          <div className="order-1 sm:order-2 w-full sm:w-auto min-w-0">
+            <Suspense fallback={<div className="h-9 w-full sm:w-[180px]" />}>
+              <CollectionFilters priceRange={priceRange} sort={sort} />
+            </Suspense>
+          </div>
         </div>
 
         {sorted.length === 0 ? (
@@ -131,7 +133,7 @@ export default async function CollectionPage({ params, searchParams }: Props) {
             {t("noProducts")}
           </p>
         ) : (
-          <div className="grid grid-cols-1 gap-6 py-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 py-6 sm:py-8 sm:grid-cols-2 lg:grid-cols-4">
             {sorted.map((product) => {
               const mainImage = product.image?.[0];
               const slug = product.slug?.current ?? product._id;
@@ -157,8 +159,8 @@ export default async function CollectionPage({ params, searchParams }: Props) {
                       </div>
                     )}
                   </div>
-                  <div className="mt-3 flex items-baseline justify-between gap-2">
-                    <span className="font-medium">{product.name}</span>
+                  <div className="mt-3 flex items-baseline justify-between gap-2 min-w-0">
+                    <span className="font-medium truncate min-w-0">{product.name}</span>
                     <span className="shrink-0 font-semibold">
                       {formatPrice(product.price, locale)}
                     </span>

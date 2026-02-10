@@ -18,7 +18,7 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="mt-8 rounded-xl border bg-muted/50 p-8 text-center">
+      <div className="mt-6 sm:mt-8 rounded-xl border bg-muted/50 p-6 sm:p-8 text-center">
         <p className="font-medium">{t("thanks")}</p>
         <p className="mt-1 text-sm text-muted-foreground">{t("thanksSub")}</p>
       </div>
@@ -26,7 +26,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+    <form onSubmit={handleSubmit} className="mt-6 sm:mt-8 space-y-5 sm:space-y-6">
       <div className="space-y-2">
         <Label htmlFor="contact-name">{t("formName")}</Label>
         <Input

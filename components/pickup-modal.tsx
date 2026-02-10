@@ -28,7 +28,7 @@ export function PickupModal() {
           {t("pickupInStore")}
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="w-[min(100vw-2rem,28rem)] max-h-[85vh] overflow-y-auto sm:max-w-md">
         <DialogHeader>
           <DialogTitle>{tModal("title")}</DialogTitle>
           <DialogDescription>{tModal("description")}</DialogDescription>
